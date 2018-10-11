@@ -1,0 +1,10 @@
+/Users/stephaniekwon/Desktop/C#/Chefs/bin/Debug/netcoreapp2.0/Chefs.deps.json
+/Users/stephaniekwon/Desktop/C#/Chefs/bin/Debug/netcoreapp2.0/Chefs.runtimeconfig.json
+/Users/stephaniekwon/Desktop/C#/Chefs/bin/Debug/netcoreapp2.0/Chefs.runtimeconfig.dev.json
+/Users/stephaniekwon/Desktop/C#/Chefs/bin/Debug/netcoreapp2.0/Chefs.dll
+/Users/stephaniekwon/Desktop/C#/Chefs/bin/Debug/netcoreapp2.0/Chefs.pdb
+/Users/stephaniekwon/Desktop/C#/Chefs/obj/Debug/netcoreapp2.0/Chefs.csproj.CoreCompileInputs.cache
+/Users/stephaniekwon/Desktop/C#/Chefs/obj/Debug/netcoreapp2.0/Chefs.AssemblyInfoInputs.cache
+/Users/stephaniekwon/Desktop/C#/Chefs/obj/Debug/netcoreapp2.0/Chefs.AssemblyInfo.cs
+/Users/stephaniekwon/Desktop/C#/Chefs/obj/Debug/netcoreapp2.0/Chefs.dll
+/Users/stephaniekwon/Desktop/C#/Chefs/obj/Debug/netcoreapp2.0/Chefs.pdb

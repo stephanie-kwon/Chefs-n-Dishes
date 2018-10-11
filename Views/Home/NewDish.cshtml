@@ -1,0 +1,68 @@
+@using Chefs.Models;
+<!DOCTYPE html>
+<html>
+<head>
+	<title> New dish page </title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <style>
+        h1 {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+    
+    </style>
+</head>
+<body>
+    <a href="/"><button type="button" class="btn btn-link">Home</button></a>
+    <h1>Add a Dish!</h1>
+
+    @model Dish
+    <form asp-action="newdish" asp-controller="Home" method="POST">
+        <div class="form-group col-sm-4 mx-auto">
+            <label asp-for="Name">Name of Dish</label>
+            <input type="text" class="form-control" asp-for="Name">
+            <span asp-validation-for="Name"></span>
+        </div>
+        <div class="form-group col-sm-4  mx-auto">
+            <label asp-for="Calories"># of Calories</label>
+            <input type="text" class="form-control" asp-for="Calories">
+            <span asp-validation-for="Calories"></span>
+        </div>
+        <div class="form-group col-sm-4  mx-auto">
+            <label asp-for="Description">Description</label>
+            <input type="text" class="form-control" asp-for="Description">
+            <span asp-validation-for="Description"></span>
+        </div>
+        <div class="form-group col-sm-4  mx-auto">
+            <label asp-for="Chef_Chefid">Chef</label>
+            <select class="form-control" asp-for="Chef_Chefid">
+                @foreach(User user in @ViewBag.Chefs)
+                {
+                    <option value="@user.Chefid">@user.FirstName</option>
+                }
+            <span asp-validation-for="Chef_Chefid"></span>
+            </select>
+        </div>
+        <div class="form-group col-sm-4  mx-auto">
+            <label asp-for="Tastiness">Tastiness</label>
+            <select class="form-control" asp-for="Tastiness">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            </select>
+            <span asp-validation-for="Tastiness"></span>
+            <br>
+            <button type="submit" class="btn btn-primary btn-sm float-right">Submit</button>
+        </div>
+    </form>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
